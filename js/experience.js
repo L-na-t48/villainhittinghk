@@ -653,7 +653,7 @@
         copyShareText() {
             const name = this.state.villainName || '小人';
             const hits = this.state.hits;
-            const text = `我剛剛在「正」小人網站擊退了「${name}」！擊打次數：${hits}次，轉運指數爆表！你也來試試線上打小人？ #打小人 #轉運 #香港文化`;
+            const text = `我剛剛在「正」小人網站擊退了「${name}」！擊打次數：${hits}次，轉運指數爆表！你也來試試線上打小人？\nhttps://l-na-t48.github.io/villainhittinghk/\n#打小人 #轉運 #香港文化`;
 
             navigator.clipboard?.writeText(text).then(() => {
                 const caption = document.getElementById('shareCaption');
