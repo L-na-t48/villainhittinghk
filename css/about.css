@@ -1,0 +1,424 @@
+/* ================================
+   關於打小人 - 頁面專屬樣式
+   ================================ */
+
+/* ---------- 圖片佔位區 ---------- */
+.img-placeholder {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background: var(--cream-dark);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    border: 2px dashed rgba(114,47,55,0.12);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.img-placeholder::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 12px,
+        rgba(114,47,55,0.02) 12px,
+        rgba(114,47,55,0.02) 24px
+    );
+}
+
+.img-placeholder:hover {
+    border-color: var(--burgundy-300);
+    background: var(--burgundy-50);
+}
+
+.img-placeholder .ph-icon {
+    font-size: 48px;
+    opacity: 0.4;
+    position: relative;
+}
+
+.img-placeholder .ph-text {
+    font-size: 13px;
+    color: var(--gray-300);
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.img-placeholder.portrait {
+    aspect-ratio: 3 / 4;
+}
+
+.img-placeholder.wide {
+    aspect-ratio: 21 / 9;
+}
+
+.img-placeholder.square {
+    aspect-ratio: 1 / 1;
+}
+
+/* ---------- 關於頁面區塊 ---------- */
+.about-panel {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.about-section {
+    margin-bottom: 72px;
+}
+
+.about-section:last-child {
+    margin-bottom: 0;
+}
+
+.section-heading {
+    font-family: var(--font-serif);
+    font-size: clamp(22px, 3vw, 30px);
+    font-weight: 700;
+    color: var(--burgundy-900);
+    letter-spacing: 3px;
+    margin-bottom: 28px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--gold-200);
+    position: relative;
+}
+
+.section-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 80px;
+    height: 2px;
+    background: var(--gold-400);
+}
+
+/* ---------- 引言區塊 ---------- */
+.lead-text {
+    font-size: 17px;
+    line-height: 2;
+    color: var(--gray-700);
+    margin-bottom: 28px;
+}
+
+.lead-text strong {
+    color: var(--burgundy-800);
+    font-weight: 600;
+}
+
+/* ---------- 古典引文 ---------- */
+.quote-block {
+    background: var(--burgundy-50);
+    border-left: 4px solid var(--gold-400);
+    padding: 28px 32px;
+    border-radius: 0 12px 12px 0;
+    margin: 32px 0;
+    position: relative;
+}
+
+.quote-block::before {
+    content: '"';
+    position: absolute;
+    top: 8px;
+    left: 20px;
+    font-family: var(--font-serif);
+    font-size: 64px;
+    color: var(--burgundy-200);
+    line-height: 1;
+    opacity: 0.5;
+}
+
+.quote-block p {
+    font-family: var(--font-serif);
+    font-size: 17px;
+    color: var(--burgundy-800);
+    line-height: 1.9;
+    position: relative;
+    padding-left: 40px;
+}
+
+.quote-block .quote-source {
+    font-family: var(--font-sans);
+    font-size: 14px;
+    color: var(--gray-500);
+    margin-top: 12px;
+    padding-left: 40px;
+}
+
+/* ---------- 並排圖文 ---------- */
+.media-text-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+    margin: 40px 0;
+}
+
+.media-text-row.reverse {
+    direction: rtl;
+}
+
+.media-text-row.reverse > * {
+    direction: ltr;
+}
+
+.media-text-row .text-col p {
+    font-size: 16px;
+    line-height: 1.9;
+    color: var(--gray-700);
+    margin-bottom: 16px;
+}
+
+.media-text-row .text-col p:last-child {
+    margin-bottom: 0;
+}
+
+/* ---------- 重點提示盒 ---------- */
+.highlight-box {
+    background: linear-gradient(135deg, var(--gold-50) 0%, var(--cream) 100%);
+    border: 1px solid var(--gold-200);
+    border-radius: 16px;
+    padding: 32px;
+    margin: 32px 0;
+    position: relative;
+}
+
+.highlight-box .box-title {
+    font-family: var(--font-serif);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--burgundy-800);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.highlight-box p {
+    font-size: 15px;
+    line-height: 1.85;
+    color: var(--gray-700);
+}
+
+/* ---------- 時間線/節氣裝飾 ---------- */
+.jingzhe-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    background: var(--burgundy-600);
+    color: var(--gold-200);
+    font-family: var(--font-serif);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    border-radius: 100px;
+    margin-bottom: 24px;
+}
+
+/* ---------- 禁忌卡片網格 ---------- */
+.taboo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 32px 0;
+}
+
+.taboo-card {
+    background: var(--white);
+    border: 1px solid rgba(114,47,55,0.08);
+    border-radius: 16px;
+    padding: 28px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.taboo-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--burgundy-300);
+    transition: background 0.3s ease;
+}
+
+.taboo-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 32px rgba(114,47,55,0.1);
+    border-color: var(--burgundy-200);
+}
+
+.taboo-card:hover::before {
+    background: var(--burgundy-600);
+}
+
+.taboo-card .taboo-icon {
+    font-size: 28px;
+    margin-bottom: 14px;
+}
+
+.taboo-card h4 {
+    font-family: var(--font-serif);
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--burgundy-900);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.taboo-card p {
+    font-size: 14px;
+    line-height: 1.75;
+    color: var(--gray-500);
+}
+
+/* ---------- 警告提示 ---------- */
+.warning-box {
+    background: var(--white);
+    border: 2px solid var(--burgundy-200);
+    border-radius: 16px;
+    padding: 32px;
+    margin: 32px 0;
+    text-align: center;
+}
+
+.warning-box .warning-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.warning-box h3 {
+    font-family: var(--font-serif);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--burgundy-800);
+    margin-bottom: 12px;
+}
+
+.warning-box p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--gray-700);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ---------- 分隔裝飾 ---------- */
+.section-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 56px 0;
+    color: var(--gold-400);
+    font-size: 18px;
+}
+
+.section-divider::before,
+.section-divider::after {
+    content: '';
+    flex: 1;
+    max-width: 120px;
+    height: 1px;
+    background: var(--gold-200);
+}
+
+/* ---------- 神明卡片 ---------- */
+.god-card {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 32px;
+    align-items: start;
+    background: var(--white);
+    border-radius: 20px;
+    padding: 32px;
+    margin-bottom: 24px;
+    border: 1px solid rgba(114,47,55,0.06);
+}
+
+.god-card .god-img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    background: var(--cream-dark);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: 2px dashed rgba(114,47,55,0.1);
+}
+
+.god-card .god-img .ph-icon {
+    font-size: 40px;
+    opacity: 0.4;
+}
+
+.god-card .god-img .ph-text {
+    font-size: 12px;
+    color: var(--gray-300);
+    letter-spacing: 1px;
+}
+
+.god-card .god-info h3 {
+    font-family: var(--font-serif);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--burgundy-900);
+    margin-bottom: 12px;
+    letter-spacing: 2px;
+}
+
+.god-card .god-info p {
+    font-size: 15px;
+    line-height: 1.85;
+    color: var(--gray-700);
+}
+
+/* ---------- 回應式 ---------- */
+@media (max-width: 768px) {
+    .media-text-row {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .media-text-row.reverse {
+        direction: ltr;
+    }
+
+    .taboo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .god-card {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .god-card .god-img {
+        max-width: 200px;
+        margin: 0 auto;
+    }
+
+    .quote-block p,
+    .quote-block .quote-source {
+        padding-left: 24px;
+    }
+
+    .highlight-box,
+    .warning-box {
+        padding: 24px;
+    }
+
+    .about-section {
+        margin-bottom: 56px;
+    }
+}

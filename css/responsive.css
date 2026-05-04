@@ -1,0 +1,188 @@
+/* ================================
+   響應式設計
+   ================================ */
+
+@media (max-width: 992px) {
+    .intro-grid { grid-template-columns: repeat(2, 1fr); }
+    .video-grid { grid-template-columns: repeat(2, 1fr); }
+    .about-content { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 768px) {
+    .navbar { padding: 0 20px; }
+
+    .nav-toggle { display: flex; }
+
+    .nav-menu {
+        position: fixed;
+        top: 0; right: -280px;
+        width: 280px; height: 100vh;
+        background: var(--burgundy-800);
+        flex-direction: column;
+        padding: 100px 24px 40px;
+        gap: 4px;
+        transition: right 0.35s ease;
+        z-index: 1000;
+    }
+
+    .nav-menu.open { right: 0; }
+
+    .nav-link {
+        padding: 14px 16px;
+        font-size: 16px;
+        border-radius: 10px;
+    }
+
+    .intro-grid { grid-template-columns: 1fr; }
+    .video-grid { grid-template-columns: 1fr; }
+
+    .hero {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-scroll {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: translateY(-20px);
+        margin-top: 32px;
+    }
+
+    .btn { width: 100%; max-width: 280px; }
+
+    .content-nav { gap: 8px; }
+    .content-nav-btn { padding: 10px 18px; font-size: 13px; }
+
+    .footer-links { gap: 20px; }
+}
+
+@media (max-width: 480px) {
+    .container { padding: 0 16px; }
+    .cta-box { padding: 48px 24px; }
+    .cta-box h2 { font-size: 24px; }
+    .game-stage { height: 320px; }
+}
+
+/* ================================
+   線上體驗 - 打小人響應式
+   ================================ */
+@media (max-width: 768px) {
+    .master-cards {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+
+    .master-photo {
+        height: 180px;
+    }
+
+    .villain-form {
+        padding: 28px 20px;
+    }
+
+    .reason-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .battle-arena {
+        height: 380px;
+    }
+
+    .slipper {
+        font-size: 56px;
+        right: calc(50% - 80px);
+    }
+
+    .battle-hud {
+        gap: 8px;
+    }
+
+    .hud-item {
+        padding: 6px 10px;
+    }
+
+    .hud-value {
+        font-size: 15px;
+    }
+
+    .talisman {
+        width: 100px;
+        height: 168px;
+        padding: 10px 6px;
+    }
+
+    .talisman-header {
+        font-size: 17px;
+        letter-spacing: 4px;
+    }
+
+    .talisman-name {
+        font-size: 18px;
+        max-width: 78px;
+    }
+
+    .talisman-stamp {
+        width: 26px;
+        height: 26px;
+        font-size: 14px;
+    }
+
+    .battle-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .battle-controls .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .bless-scene {
+        min-height: 480px;
+        padding: 32px 20px;
+    }
+
+    .fortune-card {
+        padding: 24px 20px;
+    }
+
+    .fortune-text {
+        font-size: 17px;
+    }
+
+    .share-poster {
+        max-width: 340px;
+    }
+
+    .poster-body {
+        padding: 24px 20px;
+    }
+
+    .poster-body h3 {
+        font-size: 18px;
+    }
+
+    .poster-stats {
+        gap: 12px;
+    }
+
+    .pstat-num {
+        font-size: 16px;
+    }
+
+    .share-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .share-actions .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+}

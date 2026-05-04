@@ -1,0 +1,74 @@
+/* ================================
+   打小人迷思 - 影片區塊
+   ================================ */
+
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    padding-bottom: 80px;
+}
+
+.video-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 24px rgba(114,47,55,0.06);
+    border: 1px solid rgba(114,47,55,0.06);
+    transition: all 0.4s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 48px rgba(114,47,55,0.1);
+}
+
+.video-thumb {
+    position: relative;
+    aspect-ratio: 16 / 9;
+    background: var(--burgundy-800);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.video-placeholder { font-size: 48px; opacity: 0.5; }
+
+.video-play {
+    position: absolute;
+    width: 56px; height: 56px;
+    background: var(--burgundy-600);
+    color: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding-left: 4px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.video-card:hover .video-play {
+    background: var(--burgundy-500);
+    transform: scale(1.1);
+}
+
+.video-info { padding: 24px; }
+
+.video-info h3 {
+    font-family: var(--font-serif);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--burgundy-800);
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.video-desc {
+    font-size: 14px;
+    color: var(--gray-500);
+    line-height: 1.7;
+}

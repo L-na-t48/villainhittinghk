@@ -1,0 +1,119 @@
+/* ================================
+   各內頁共用樣式（header + tabs + placeholder）
+   ================================ */
+
+.page-header {
+    background: var(--burgundy-900);
+    padding: calc(var(--nav-height) + 80px) 0 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 120%, rgba(212,175,55,0.06) 0%, transparent 50%);
+}
+
+.page-tag {
+    display: inline-block;
+    padding: 6px 16px;
+    background: rgba(212,175,55,0.1);
+    color: var(--gold-300);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    border-radius: 100px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.page-title {
+    font-family: var(--font-serif);
+    font-size: clamp(32px, 5vw, 52px);
+    font-weight: 700;
+    color: var(--gold-300);
+    letter-spacing: 6px;
+    margin-bottom: 16px;
+    position: relative;
+}
+
+.page-desc {
+    font-size: 16px;
+    color: rgba(255,255,255,0.55);
+    font-weight: 300;
+    position: relative;
+}
+
+/* 內容導航標籤 */
+.content-nav {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 40px 0 48px;
+    border-bottom: 1px solid rgba(114,47,55,0.08);
+    margin-bottom: 48px;
+}
+
+.content-nav-btn {
+    padding: 12px 24px;
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--gray-500);
+    background: var(--white);
+    border: 1px solid rgba(114,47,55,0.1);
+    border-radius: 100px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.content-nav-btn:hover {
+    color: var(--burgundy-600);
+    border-color: var(--burgundy-300);
+}
+
+.content-nav-btn.active {
+    background: var(--burgundy-600);
+    color: var(--white);
+    border-color: var(--burgundy-600);
+    box-shadow: 0 4px 16px rgba(114,47,55,0.2);
+}
+
+/* 內容面板 */
+.content-panel {
+    display: none;
+    animation: fadeIn 0.4s ease;
+    padding-bottom: 80px;
+    min-height: 400px;
+}
+
+.content-panel.active { display: block; }
+
+/* 佔位內容 */
+.content-placeholder {
+    text-align: center;
+    padding: 80px 40px;
+    background: var(--white);
+    border-radius: 20px;
+    border: 2px dashed rgba(114,47,55,0.1);
+}
+
+.content-placeholder.small { padding: 48px 40px; }
+
+.placeholder-icon { font-size: 56px; margin-bottom: 20px; opacity: 0.7; }
+
+.content-placeholder h2 {
+    font-family: var(--font-serif);
+    font-size: 26px;
+    color: var(--burgundy-800);
+    margin-bottom: 8px;
+}
+
+.content-placeholder p {
+    color: var(--gray-300);
+    font-size: 15px;
+}

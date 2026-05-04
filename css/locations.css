@@ -1,0 +1,217 @@
+/* ================================
+   推薦地點 - 頁面專屬樣式
+   ================================ */
+
+/* ---------- 頁面引言 ---------- */
+.location-intro {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 40px auto 40px;
+    padding: 24px 32px;
+    background: linear-gradient(135deg, var(--burgundy-50) 0%, var(--cream) 100%);
+    border: 1px solid rgba(114, 47, 55, 0.08);
+    border-radius: 16px;
+    text-align: center;
+    justify-content: center;
+}
+
+.location-intro-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+.location-intro p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--gray-700);
+}
+
+.location-intro p strong {
+    color: var(--burgundy-800);
+    font-weight: 600;
+}
+
+/* ---------- 地點面板 ---------- */
+.location-panel {
+    max-width: 960px;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+/* ---------- 照片區域 ---------- */
+.location-hero {
+    margin-bottom: 40px;
+}
+
+.location-img {
+    aspect-ratio: 21 / 9;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(45, 10, 12, 0.1);
+}
+
+.location-img .ph-icon {
+    font-size: 56px;
+    opacity: 0.4;
+}
+
+.location-img .ph-text {
+    font-size: 15px;
+    color: var(--gray-300);
+    letter-spacing: 2px;
+}
+
+/* ---------- 地點內文 ---------- */
+.location-body {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 40px;
+    border: 1px solid rgba(114, 47, 55, 0.06);
+    box-shadow: 0 4px 24px rgba(114, 47, 55, 0.04);
+}
+
+.location-header {
+    margin-bottom: 20px;
+}
+
+.location-name {
+    font-family: var(--font-serif);
+    font-size: clamp(24px, 4vw, 32px);
+    font-weight: 700;
+    color: var(--burgundy-900);
+    letter-spacing: 3px;
+    margin-bottom: 6px;
+}
+
+.location-sub {
+    display: inline-block;
+    padding: 4px 14px;
+    background: var(--burgundy-50);
+    color: var(--burgundy-600);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 8px;
+}
+
+.location-body .lead-text {
+    font-size: 17px;
+    line-height: 2;
+    color: var(--gray-700);
+    margin-bottom: 32px;
+}
+
+.location-body .lead-text strong {
+    color: var(--burgundy-800);
+    font-weight: 600;
+}
+
+/* ---------- 詳情卡片 ---------- */
+.location-details {
+    margin-bottom: 32px;
+}
+
+.detail-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 18px;
+    padding: 24px;
+    background: var(--cream);
+    border-radius: 16px;
+    border: 1px solid rgba(114, 47, 55, 0.06);
+    transition: all 0.3s ease;
+}
+
+.detail-card:hover {
+    background: var(--burgundy-50);
+    border-color: rgba(114, 47, 55, 0.1);
+}
+
+.detail-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+
+.detail-content h4 {
+    font-family: var(--font-serif);
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--burgundy-900);
+    margin-bottom: 6px;
+    letter-spacing: 1px;
+}
+
+.detail-content p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--gray-700);
+}
+
+/* ---------- Google Maps 按鈕 ---------- */
+.btn-map {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 28px;
+    background: var(--white);
+    color: var(--burgundy-700);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 12px;
+    border: 2px solid var(--burgundy-200);
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.btn-map:hover {
+    background: var(--burgundy-600);
+    color: var(--white);
+    border-color: var(--burgundy-600);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(114, 47, 55, 0.25);
+}
+
+.btn-map span {
+    font-size: 18px;
+}
+
+/* ---------- 回應式 ---------- */
+@media (max-width: 768px) {
+    .location-intro {
+        flex-direction: column;
+        gap: 12px;
+        padding: 20px 24px;
+    }
+
+    .location-intro p {
+        font-size: 14px;
+    }
+
+    .location-img {
+        aspect-ratio: 16 / 10;
+        border-radius: 14px;
+    }
+
+    .location-body {
+        padding: 28px 24px;
+    }
+
+    .location-name {
+        font-size: 24px;
+    }
+
+    .location-body .lead-text {
+        font-size: 15px;
+    }
+
+    .detail-card {
+        padding: 20px;
+    }
+
+    .btn-map {
+        width: 100%;
+        justify-content: center;
+    }
+}
