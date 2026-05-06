@@ -1,1174 +1,732 @@
-<!DOCTYPE html>
-<html lang="zh-Hant">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>「正」小人 - 香港打小人文化</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/page-common.css">
-    <link rel="stylesheet" href="css/experience.css">
-    <link rel="stylesheet" href="css/myths.css">
-    <link rel="stylesheet" href="css/about.css">
-    <link rel="stylesheet" href="css/guide.css">
-    <link rel="stylesheet" href="css/locations.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/responsive.css">
-</head>
-<body>
-    <!-- 導航欄 -->
-    <nav class="navbar" id="navbar">
-        <div class="nav-brand">
-            <a href="#" data-page="home">
-                <span class="brand-icon">正</span>
-                <span class="brand-text">小人</span>
-            </a>
-        </div>
-        <button class="nav-toggle" id="navToggle" aria-label="開啟選單">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-        <ul class="nav-menu" id="navMenu">
-            <li><a href="#" data-page="about" class="nav-link">關於打小人</a></li>
-            <li><a href="#" data-page="guide" class="nav-link">打小人指南</a></li>
-            <li><a href="#" data-page="locations" class="nav-link">推薦地點</a></li>
-            <li><a href="#" data-page="experience" class="nav-link">線上體驗</a></li>
-            <li><a href="#" data-page="myths" class="nav-link">打小人迷思</a></li>
-            <li><a href="#" data-page="contact" class="nav-link">關於我們</a></li>
-        </ul>
-    </nav>
-
-    <!-- 遮罩 -->
-    <div class="nav-overlay" id="navOverlay"></div>
-
-    <!-- 主要內容區 -->
-    <main id="mainContent">
-        
-        <!-- 首頁 -->
-        <section class="page active" id="page-home">
-            <div class="hero">
-                <div class="hero-bg"></div>
-                <div class="hero-content">
-                    <div class="hero-badge">香港非物質文化遺產</div>
-                    <h1 class="hero-title">
-                        <span class="title-main">「正」小人</span>
-                        <span class="title-sub">以正制邪 · 消災解厄</span>
-                    </h1>
-                    <p class="hero-desc">
-                        打小人，這項流傳百年的香港民間習俗，<br>
-                        不只是發洩情緒，更是一門深具智慧的文化藝術。
-                    </p>
-                    <div class="hero-actions">
-                        <a href="#" class="btn btn-primary" data-page="about">探索文化</a>
-                        <a href="#" class="btn btn-outline" data-page="experience">立即體驗</a>
-                    </div>
-                </div>
-                <div class="hero-scroll">
-                    <span>向下探索</span>
-                    <div class="scroll-line"></div>
-                </div>
-            </div>
-
-            <div class="section intro-section">
-                <div class="container">
-                    <div class="section-header">
-                        <span class="section-tag">文化概覽</span>
-                        <h2 class="section-title">什麼是打小人？</h2>
-                        <p class="section-subtitle">一種以象徵性儀式驅逐厄運、化解小人的民間信仰</p>
-                    </div>
-                    <div class="intro-grid">
-                        <div class="intro-card">
-                            <div class="intro-icon">📜</div>
-                            <h3>百年傳承</h3>
-                            <p>打小人源於古代的巫術與驅邪儀式，在香港發展成獨特的文化現象。</p>
-                            <a href="#" class="card-link" data-page="about">了解歷史 →</a>
-                        </div>
-                        <div class="intro-card">
-                            <div class="intro-icon">🎯</div>
-                            <h3>象徵儀式</h3>
-                            <p>以鞋子拍打紙製小人，象徵驅逐生活中的小人與厄運，尋求心靈慰藉。</p>
-                            <a href="#" class="card-link" data-page="guide">學習流程 →</a>
-                        </div>
-                        <div class="intro-card">
-                            <div class="intro-icon">🌉</div>
-                            <h3>鵝頸橋下</h3>
-                            <p>灣仔鵝頸橋底是打小人最著名的聖地，吸引各地遊客前來體驗。</p>
-                            <a href="#" class="card-link" data-page="locations">查看地點 →</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="section cta-section">
-                <div class="container">
-                    <div class="cta-box">
-                        <h2>想親身體驗打小人的感覺？</h2>
-                        <p>不用親臨現場，也能感受這項傳統儀式的獨特魅力</p>
-                        <a href="#" class="btn btn-gold" data-page="experience">開始線上體驗</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 關於打小人 -->
-        <section class="page" id="page-about">
-            <div class="page-header">
-                <div class="container">
-                    <span class="page-tag">About Villain Hitting</span>
-                    <h1 class="page-title">關於打小人</h1>
-                    <p class="page-desc">深入探索這項香港非物質文化遺產的歷史與內涵</p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="content-nav">
-                    <button class="content-nav-btn active" data-target="about-history">歷史起源</button>
-                    <button class="content-nav-btn" data-target="about-god">核心神明</button>
-                    <button class="content-nav-btn" data-target="about-philosophy">民間哲學</button>
-
-                </div>
-
-                <!-- 歷史起源 -->
-                <div class="content-panel active" id="about-history">
-                    <div class="about-panel">
-                        <div class="about-section">
-                            <h2 class="section-heading">打小人起源</h2>
-                            <p class="lead-text">
-                                現今，打小人是一種流傳於<strong>廣東、福建、香港</strong>等地的傳統民俗，透過特定儀式來象徵性地驅除小人、霉運、負能量，以改善工作運、財運和人際關係。儀式通常由經驗豐富的「打手婆婆」主持，透過焚香、敲打紙人、唸誦口訣等步驟進行，以驅邪轉運！
-                            </p>
-                            <img src="images/打小人儀式現場照片.jpg" alt="打小人儀式現場照片" class="content-img">
-                        </div>
-
-                        <div class="about-section">
-                            <p class="lead-text">
-                                而在古時，帝王身邊總有人為權力鬥爭而挑撥離間、發放謠言和中傷他人，人們把這類人稱之為「小人」。「小人」的定義後來演變成為在人們背後存心搗亂和陰險的人。要避免與躲在陰暗處的「小人」作衝突，但又無法消氣，人們只好私下利用一些傳統儀式和方法化解和發洩自己內心的怨恨。
-                            </p>
-
-                            <div class="quote-block">
-                                <p>君子在野，小人在位。</p>
-                                <div class="quote-source">——《尚書．大禹謨》</div>
-                            </div>
-
-                            <div class="quote-block">
-                                <p>君子小人只是箇正不正。</p>
-                                <div class="quote-source">——《朱子語類》</div>
-                            </div>
-
-                            <p class="lead-text">
-                                自盛唐開始，便有「打小人」的習俗，並延續至今。在一般人的眼中，「打小人」也許只是沒有科學根據而又迷信的一種中國傳統儀式。但隨著時代的變遷和社會的進步，有人發展出「網上打小人」，也有人從「打小人」中得到各式各樣的啟發，引發無窮商機。
-                            </p>
-
-                            <div class="highlight-box">
-                                <div class="box-title">✦ 現代演變</div>
-                                <p>從今，「打小人」不再只是一種發洩的途徑，它可以演變為一種<strong>行為藝術</strong>，一種與別不同的<strong>設計</strong>，一種值得研究並反映人們心理的<strong>中國傳統</strong>。</p>
-                            </div>
-                        </div>
-
-                        <div class="section-divider">❖</div>
-
-                        <div class="about-section">
-                            <div class="jingzhe-badge">⚡ 驚蟄節氣</div>
-                            <h2 class="section-heading">「驚蟄」打小人的講究</h2>
-
-                            <div class="media-text-row">
-                                <div class="text-col">
-                                    <p>
-                                        「驚蟄」是中國每年的二十四個節氣的其中一個，通常在每年公元西曆的<strong>三月五日或六日</strong>，即中國農曆二月廿一日，進入「驚蟄」這個節令。「驚蟄」，又名「白虎開口日」。按字面的解釋，「蟄」是冬眠，而「驚蟄」則是動物剛剛醒來的時候。
-                                    </p>
-                                    <p>
-                                        按廣東民間傳說，凶神之一的白虎也於這時覓食。為著平安，驚蟄那天要祭白虎。相傳在驚蟄日，天空會出現旱天雷，驚醒蟄伏在泥土下東面的蛇蟲鼠蟻。
-                                    </p>
-                                </div>
-                                <div class="img-col">
-                                    <img src="images/驚蟄祭白虎.jpg" alt="驚蟄祭白虎" class="content-img portrait">
-                                </div>
-                            </div>
-
-                            <div class="media-text-row reverse">
-                                <div class="text-col">
-                                    <p>
-                                        古時候的農夫，為了防止蛇蟲鼠蟻甦醒後會破壞農作物，就會拜祭白虎，因為白虎是獸王，能驅除百毒，免被害蟲入侵。
-                                    </p>
-                                    <p>
-                                        而「驚蟄日」在傳統習俗中亦為打小人的日子。小人是指那些喜歡挑撥離間，惹是生非的人，他們就像蛇蟲鼠蟻等害蟲一般討厭；而小人又象徵惡運黴運，諸事不順、處處受阻等意思，故此在傳統習俗上亦會在驚蟄這天「打小人」。
-                                    </p>
-                                </div>
-                                <div class="img-col">
-                                    <img src="images/驚蟄節氣意象圖.PNG" alt="驚蟄節氣意象圖" class="content-img portrait">
-                                </div>
-                            </div>
-
-                            <div class="highlight-box">
-                                <div class="box-title">📅 全年皆可進行</div>
-                                <p>除了驚蟄日，其實<strong>全年都可以</strong>進行打小人儀式，尤其是<strong>農曆初一和十五</strong>，因為這兩天能量特別強，適合祈福和驅邪！如果近期覺得運勢不好、諸事不順、小人作祟，也可以選擇合適的日子進行儀式。但是，一定要記得<strong>避開與自己生肖相沖的日子</strong>，以免適得其反！</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 核心神明 -->
-                <div class="content-panel" id="about-god">
-                    <div class="about-panel">
-                        <div class="about-section">
-                            <h2 class="section-heading">打小人儀式中的核心神明</h2>
-                            <p class="lead-text">
-                                打小人儀式並非單純的「發洩」行為，背後蘊含著深厚的民間信仰體系。儀式中涉及多位神明，其中最重要的兩位是<strong>白虎</strong>與<strong>打手婆婆</strong>（又稱「神婆」或「問米婆」）。
-                            </p>
-                        </div>
-
-                        <div class="god-card">
-                            <img src="images/白虎神像.JPG" alt="白虎神像" class="god-img">
-                            <div class="god-info">
-                                <h3>白虎</h3>
-                                <p>
-                                    白虎是道教中的凶神之一，亦被視為獸中之王。在驚蟄當天，傳說白虎會出來覓食，因此人們會以豬肉或油豆腐祭拜白虎，稱為「祭白虎」或「餵白虎」。白虎能鎮壓百毒、驅除害蟲，儀式中在白虎面前打小人，象徵小人會被白虎制服，以後不能再興風作浪。
-                                </p>
-                            </div>
-                        </div>
-
-                        <div class="god-card">
-                            <img src="images/打手婆婆.jpg" alt="打手婆婆" class="god-img">
-                            <div class="god-info">
-                                <h3>打手婆婆</h3>
-                                <p>
-                                    「打手婆婆」是主持打小人儀式的關鍵人物，她們通常年長、經驗豐富，熟悉完整的儀式流程與口訣。打手婆婆不僅負責敲打紙人，更會誦唸咒語、焚香稟告神明，將當事人的冤屈傳達上天。她們被視為凡間與靈界之間的溝通橋樑，是儀式中不可或缺的靈魂人物。
-                                </p>
-                            </div>
-                        </div>
-
-                        <img src="images/祭壇神明廳全景照片.jpg" alt="祭壇神明廳全景照片" class="content-img wide" style="margin-top: 24px;">
-                    </div>
-                </div>
-
-                <!-- 民間哲學 -->
-                <div class="content-panel" id="about-philosophy">
-                    <div class="about-panel">
-                        <div class="about-section">
-                            <h2 class="section-heading">打小人的文化意義</h2>
-                            <p class="lead-text">
-                                打小人的文化意義，首先在於它是一種<strong>庶民的心理療癒機制</strong>。當人們遭遇職場陷害、感情背叛等不公，卻無力直接對抗時，透過拍打小人紙、誦唸咒語，能將抽象的憤怒與無助具體發洩出來，達到情緒疏導的效果。
-                            </p>
-                        </div>
-
-                        <div class="about-section">
-                            <div class="media-text-row">
-                                <div class="text-col">
-                                    <h3 style="font-family: var(--font-serif); font-size: 20px; color: var(--burgundy-900); margin-bottom: 16px; letter-spacing: 2px;">社會安全閥</h3>
-                                    <p>
-                                        其次，它扮演著「社會安全閥」的角色——與其讓怨氣累積到爆發真實衝突，不如透過儀式化解仇恨，間接維持社區和諧。
-                                    </p>
-                                    <p>
-                                        再者，這項習俗連結驚蟄節氣與祭白虎傳統，把干擾是非者比喻為春日甦醒的害蟲，體現華人<strong>順應天時、趨吉避凶</strong>的宇宙觀。
-                                    </p>
-                                </div>
-
-                            </div>
-
-                            <div class="highlight-box">
-                                <div class="box-title">🌟 懲惡揚善</div>
-                                <p>儀式結尾往往轉向祈福，暗含<strong>「懲惡即是揚善」</strong>的倫理信念，讓當事人得以清掃負能量、重新出發。正因如此，打小人雖帶巫術色彩，卻被列入<strong>香港非物質文化遺產</strong>，成為集體認同的象徵。</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
-        </section>
-
-        <!-- 打小人指南 -->
-        <section class="page" id="page-guide">
-            <div class="page-header">
-                <div class="container">
-                    <span class="page-tag">Guide</span>
-                    <h1 class="page-title">打小人指南</h1>
-                    <p class="page-desc">從準備材料到完成儀式的完整教學</p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="content-nav">
-                    <button class="content-nav-btn active" data-target="guide-materials">準備材料</button>
-                    <button class="content-nav-btn" data-target="guide-process">儀式流程</button>
-                    <button class="content-nav-btn" data-target="guide-chant">打小人口訣</button>
-                    <button class="content-nav-btn" data-target="guide-taboo">注意事項</button>
-                    <button class="content-nav-btn" data-target="guide-info">實用資訊</button>
-                </div>
-
-                <div class="content-panel active" id="guide-materials">
-                    <div class="guide-panel">
-                        <div class="guide-section">
-                            <div class="highlight-box tip-box">
-                                <div class="box-title">💡 溫馨提示</div>
-                                <p>如果您是去專業的打小人攤位，例如<strong>灣仔鵝頸橋</strong>，師傅通常會準備好一整套小人衣紙及相關物品，您不需要自行購買，只需提供姓名和出生日期即可。</p>
-                            </div>
-                        </div>
-
-                        <div class="guide-section">
-                            <h2 class="section-heading">五寶紙與儀式物品</h2>
-                            <div class="item-grid">
-                                <!-- 五寶紙 - 全寬卡片 -->
-                                <div class="item-card item-card-full">
-                                    <div class="item-img">
-                                        <img src="images/準備材料/五寶紙.jpg" alt="五寶紙" class="item-photo">
-                                    </div>
-                                    <div class="item-info">
-                                        <h3>五寶紙</h3>
-                                        <p>一套完整的祈福紙品，內含一男一女小人紙、百解靈符、圓祿馬、長祿馬、貴人指引及三天賜福轉運降鴻寶牒。傳統上會在五寶紙上寫上委託人的姓名、出生年月日及出生地。</p>
-
-                                        <div class="item-details">
-                                            <div class="detail-item">
-                                                <div class="detail-item-header">
-                                                    <span class="detail-num">1</span>
-                                                    <span class="detail-name">百解靈符</span>
-                                                </div>
-                                                <p>祭拜神靈，祈求消百災、解百厄。</p>
-                                            </div>
-                                            <div class="detail-item">
-                                                <div class="detail-item-header">
-                                                    <span class="detail-num">2</span>
-                                                    <span class="detail-name">圓祿馬</span>
-                                                </div>
-                                                <p>寓意祈求貴人從四方八面源源不絕地到來扶持指引。</p>
-                                            </div>
-                                            <div class="detail-item">
-                                                <div class="detail-item-header">
-                                                    <span class="detail-num">3</span>
-                                                    <span class="detail-name">長祿馬</span>
-                                                </div>
-                                                <p>俗稱拖手貴人祿馬，寓意祈求眾多貴人接踵而至，手牽手環繞身邊給予助力。</p>
-                                            </div>
-                                            <div class="detail-item">
-                                                <div class="detail-item-header">
-                                                    <span class="detail-num">4</span>
-                                                    <span class="detail-name">貴人指引（金則解）</span>
-                                                </div>
-                                                <p>內有貴人和合符，寓意祈求人緣良好，事業順利，財源廣進。</p>
-                                            </div>
-                                            <div class="detail-item">
-                                                <div class="detail-item-header">
-                                                    <span class="detail-num">5</span>
-                                                    <span class="detail-name">三天賜福轉運降鴻寶牒</span>
-                                                </div>
-                                                <p>俗稱「金筒符」，用於祈求上天賜福、轉運增祥。</p>
-                                            </div>
-                                            <div class="detail-item">
-                                                <div class="detail-item-header">
-                                                    <span class="detail-num">6</span>
-                                                    <span class="detail-name">小人紙</span>
-                                                </div>
-                                                <p>分為男小人紙（男人丁）和女小人紙（女人丁），用來代表要驅趕的對象。</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <!-- 小人紙 -->
-                                <div class="item-card">
-                                    <div class="item-img dual-img">
-                                        <div class="dual-photo">
-                                            <img src="images/準備材料/男小人紙（男人丁）.png" alt="男小人紙">
-                                            <span class="dual-label">男人丁</span>
-                                        </div>
-                                        <div class="dual-photo">
-                                            <img src="images/準備材料/女小人紙（女人丁）.png" alt="女小人紙">
-                                            <span class="dual-label">女人丁</span>
-                                        </div>
-                                    </div>
-                                    <div class="item-info">
-                                        <h3>小人紙</h3>
-                                        <p>分為<strong>男小人紙（男人丁）</strong>和<strong>女小人紙（女人丁）</strong>，用來代表要驅趕的對象。</p>
-                                    </div>
-                                </div>
-
-                                <!-- 拖鞋或舊鞋 -->
-                                <div class="item-card">
-                                    <div class="item-img">
-                                        <img src="images/準備材料/拖鞋或舊鞋.jpg" alt="拖鞋或舊鞋" class="item-photo">
-                                    </div>
-                                    <div class="item-info">
-                                        <h3>拖鞋或舊鞋</h3>
-                                        <p>用來拍打小人紙的工具，象徵打到小人無路走。</p>
-                                    </div>
-                                </div>
-
-                                <!-- 紙老虎 -->
-                                <div class="item-card">
-                                    <div class="item-img">
-                                        <img src="images/準備材料/紙老虎.jpg" alt="紙老虎" class="item-photo">
-                                    </div>
-                                    <div class="item-info">
-                                        <h3>紙老虎</h3>
-                                        <p>用於象徵白虎，一般為黃色黑斑紋，口角畫有一對獠牙，需用生豬肉祭拜以平息其戾氣。</p>
-                                    </div>
-                                </div>
-
-                                <!-- 生肥豬肉 -->
-                                <div class="item-card">
-                                    <div class="item-img">
-                                        <img src="images/準備材料/生肥豬肉.webp" alt="生肥豬肉" class="item-photo">
-                                    </div>
-                                    <div class="item-info">
-                                        <h3>生肥豬肉</h3>
-                                        <p>抹在紙老虎的嘴部。其寓意有二：一是將老虎「餵飽」使其不再傷人；二是讓老虎嘴部沾滿油水，使其「油嘴滑舌」不再張口散布是非，封住小人之口。</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="content-panel" id="guide-process">
-                    <div class="guide-panel">
-                        <div class="guide-section">
-                            <div class="video-wrapper">
-                                <iframe src="https://www.youtube.com/embed/KpuyRuqTZAE" title="打小人儀式影片" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </div>
-                        </div>
-
-                        <div class="guide-section">
-                            <h2 class="section-heading">根據影片內容的打小人步驟</h2>
-                            <div class="step-timeline">
-                                <div class="step-card">
-                                    <div class="step-num">1</div>
-                                    <div class="step-body">
-                                        <h3>寫名稟告</h3>
-                                        <p>委託人在五寶紙上寫上自己的<strong>姓名、出生年月日、出生地</strong>。如有打小人對象就在男或女小人紙上寫小人名字。若無特定小人對象可以不用填寫，泛指打走委託人身邊的小人。</p>
-                                    </div>
-                                </div>
-                                <div class="step-card">
-                                    <div class="step-num">2</div>
-                                    <div class="step-body">
-                                        <h3>上香</h3>
-                                        <p>委託人需要誠心向天地神明上香。</p>
-                                    </div>
-                                </div>
-                                <div class="step-card">
-                                    <div class="step-num">3</div>
-                                    <div class="step-body">
-                                        <h3>請神</h3>
-                                        <p>拜神婆以<strong>三支清香、五寶紙、小人紙</strong>為委託人請神及化解是非小人。</p>
-                                    </div>
-                                </div>
-                                <div class="step-card">
-                                    <div class="step-num">4</div>
-                                    <div class="step-body">
-                                        <h3>打小人</h3>
-                                        <p>拜神婆將小人紙放在磚頭上，一邊念咒、一邊用鞋拍打小人紙部位，<strong>直至小人紙破爛為止</strong>。</p>
-                                    </div>
-                                </div>
-                                <div class="step-card">
-                                    <div class="step-num">5</div>
-                                    <div class="step-body">
-                                        <h3>餵白虎</h3>
-                                        <p>用紙老虎包起小人紙碎片，寓意白虎將小人叼走，不會再傷害貴人，再餵白虎吃肥豬肉，把紙老虎放在肥豬肉上下來回的抹數下，使其吃飽後不再出口傷人，再把白虎化掉。</p>
-                                    </div>
-                                </div>
-                                <div class="step-card">
-                                    <div class="step-num">6</div>
-                                    <div class="step-body">
-                                        <h3>化解</h3>
-                                        <p>拜神婆用<strong>百解靈符</strong>為委託人掃身，象徵為其消除厄運，再撒芝麻、花生、豆子等象徵消災解厄。</p>
-                                    </div>
-                                </div>
-                                <div class="step-card">
-                                    <div class="step-num">7</div>
-                                    <div class="step-body">
-                                        <h3>祈福</h3>
-                                        <p>以紅色的貴人紙，為委託者祈求貴人幫助。</p>
-                                    </div>
-                                </div>
-                                <div class="step-card">
-                                    <div class="step-num">8</div>
-                                    <div class="step-body">
-                                        <h3>進寶</h3>
-                                        <p>之後把貴人紙、元寶一起燒掉，供奉鬼神。</p>
-                                    </div>
-                                </div>
-                                <div class="step-card">
-                                    <div class="step-num">9</div>
-                                    <div class="step-body">
-                                        <h3>擲筊</h3>
-                                        <p>必須擲出<strong>聖筊（一正一反）</strong>才代表儀式成功。如果連續三次失敗，則需重新開始，便代表神明不同意或儀式過程有誤，需重新開始整個儀式。</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="section-divider">❖</div>
-                    </div>
-                </div>
-
-                <div class="content-panel" id="guide-chant">
-                    <div class="guide-panel">
-                        <div class="guide-section">
-                            <h2 class="section-heading">打小人口訣</h2>
-                            <p class="lead-text">打小人口訣有不同長度、不同內容的版本，以下是三種常見版本：</p>
-                            <div class="chant-grid">
-                                <div class="chant-card">
-                                    <div class="chant-header">
-                                        <span class="chant-version">Version 1</span>
-                                        <span class="chant-badge">精簡版</span>
-                                    </div>
-                                    <div class="chant-body">
-                                        <p>打你個小人頭 <span class="chant-rhyme">打到你成世無出頭</span></p>
-                                        <p>打你個小人手 <span class="chant-rhyme">等你無鞋挽屐走</span></p>
-                                        <p>打你個小人眼 <span class="chant-rhyme">等你成世都撞板</span></p>
-                                        <p>打你個小人腳 <span class="chant-rhyme">打到你有鞋唔識着</span></p>
-                                    </div>
-                                </div>
-                                <div class="chant-card">
-                                    <div class="chant-header">
-                                        <span class="chant-version">Version 2</span>
-                                        <span class="chant-badge">進階版</span>
-                                    </div>
-                                    <div class="chant-body">
-                                        <p>打你個小人頭，<span class="chant-rhyme">等你有氣無埞抖</span></p>
-                                        <p>打你個小人面，<span class="chant-rhyme">等你成世都犯賤</span></p>
-                                        <p>打你個小人眼，<span class="chant-rhyme">等你考試零雞蛋</span></p>
-                                        <p>打你個小人耳，<span class="chant-rhyme">等你銀紙當草紙</span></p>
-                                        <p>打你個小人嘴，<span class="chant-rhyme">等你有女冇得追</span></p>
-                                        <p>打你個小人肚，<span class="chant-rhyme">等你日日比人告</span></p>
-                                        <p>打你個小人手，<span class="chant-rhyme">等你有錢唔識收</span></p>
-                                        <p>打你個小人腳，<span class="chant-rhyme">等你有鞋無得著</span></p>
-                                    </div>
-                                </div>
-                                <div class="chant-card">
-                                    <div class="chant-header">
-                                        <span class="chant-version">Version 3</span>
-                                        <span class="chant-badge">完整版</span>
-                                    </div>
-                                    <div class="chant-body">
-                                        <p>打你個小人頭，<span class="chant-rhyme">等你有氣冇埞唞，日日去撼頭。</span></p>
-                                        <p>打你個小人面，<span class="chant-rhyme">等你全家中非典，成世都犯賤。</span></p>
-                                        <p>打你個小人眼，<span class="chant-rhyme">等你成世都撞板，日日被人斬。</span></p>
-                                        <p>打你個小人耳，<span class="chant-rhyme">等你日日痾爛屎，抿屎用手指。</span></p>
-                                        <p>打你個小人鼻，<span class="chant-rhyme">等你索野無晒味，鼻涕流到地。</span></p>
-                                        <p>打你個小人口，<span class="chant-rhyme">等你講嘢有得唞，食飯都會嘔。</span></p>
-                                        <p>打你個小人頸，<span class="chant-rhyme">等你周身都有病，花柳兼淋病。</span></p>
-                                        <p>打你個小人胸，<span class="chant-rhyme">等你頭暈兼中風，後門被人通。</span></p>
-                                        <p>打你個小人手，<span class="chant-rhyme">等你有錢唔識收，有樓變喳兜。</span></p>
-                                        <p>打你個小人腳，<span class="chant-rhyme">等你日日敷中藥，有鞋冇腳著。</span></p>
-                                        <p>打你個小人肚，<span class="chant-rhyme">等你惡運行到老，日日被人告。</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="content-panel" id="guide-taboo">
-                    <div class="guide-panel">
-                        <div class="guide-section">
-                            <h2 class="section-heading">注意事項與禁忌</h2>
-                            <p class="lead-text">進行打小人儀式時，必須謹記以下禁忌，以免弄巧成拙，反而讓霉運纏身！</p>
-                            <div class="taboo-grid">
-                                <div class="taboo-card">
-                                    <div class="taboo-icon">☀️</div>
-                                    <h4>最佳時間為白天</h4>
-                                    <p>午時（早上11點至中午1點）陽氣最旺盛，最適合打小人。夜間陰氣較重，容易招惹不好，要避免進行儀式。</p>
-                                </div>
-                                <div class="taboo-card">
-                                    <div class="taboo-icon">🤰</div>
-                                    <h4>孕婦與病人不宜</h4>
-                                    <p>孕婦及體弱者氣場較弱，不宜參與；亦不可將孕婦當作小人攻擊，以免帶來反效果。</p>
-                                </div>
-                                <div class="taboo-card">
-                                    <div class="taboo-icon">📝</div>
-                                    <h4>切勿指名道姓</h4>
-                                    <p>千萬不要指名道姓，亂寫可能招來業障，傷人也傷己，只需寫「小人」或「是非精」等！</p>
-                                </div>
-                                <div class="taboo-card">
-                                    <div class="taboo-icon">🔥</div>
-                                    <h4>小人衣紙須焚化乾淨</h4>
-                                    <p>打小人後，所有使用過的小人紙、圖鑑需焚燒，完全消除負能量。</p>
-                                </div>
-                                <div class="taboo-card">
-                                    <div class="taboo-icon">👟</div>
-                                    <h4>鞋子應直接丟棄</h4>
-                                    <p>用來打小人的鞋應丟棄，切勿帶回家中，避免將霉運帶回家。</p>
-                                </div>
-                                <div class="taboo-card">
-                                    <div class="taboo-icon">⏱️</div>
-                                    <h4>不能過度頻繁</h4>
-                                    <p>適量打小人可驅散負能量，但過度進行反而會影響到自己的運勢！適量進行，勿過度迷信！</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="section-divider">❖</div>
-
-                        <div class="guide-section">
-                            <div class="warning-box">
-                                <div class="warning-icon">💭</div>
-                                <h3>打小人會反噬？</h3>
-                                <p>很多人擔心打小人會帶來反噬效果，甚至影響自身運勢。其實打小人的核心意義是<strong>「驅邪避害」</strong>，並非<strong>「詛咒報復」</strong>，關鍵在於心態和方式。</p>
-                            </div>
-
-                            <div class="highlight-box">
-                                <div class="box-title">💡 正確心態</div>
-                                <p>只要不帶著強烈怨念、不針對特定對象，而是將其視為象徵性儀式清除負能量、調整自己的氣場，就不會影響自己的運勢。另外，抱持正向心態參與打小人儀式，更有助於強化自身能量場，帶來心理上的安定和自信，才能真正提升運氣，趨吉避凶！</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="content-panel" id="guide-info">
-                    <div class="guide-panel">
-                        <div class="guide-section">
-                            <h2 class="section-heading">實用資訊指南</h2>
-
-                            <div class="taboo-grid">
-                                <div class="taboo-card">
-                                    <div class="taboo-icon">🕘</div>
-                                    <h4>營業時間</h4>
-                                    <p>每日 09:00 - 18:00</p>
-                                </div>
-                                <div class="taboo-card">
-                                    <div class="taboo-icon">📍</div>
-                                    <h4>地址</h4>
-                                    <p>灣仔鵝頸堅拿道東1號（堅拿道西與軒尼詩道交界的堅拿道天橋橋底）</p>
-                                </div>
-                                <div class="taboo-card">
-                                    <div class="taboo-icon">🚇</div>
-                                    <h4>交通方式</h4>
-                                    <p>港鐵銅鑼灣站 A 出口，沿羅素街向鵝頸橋方向步行約 5 分鐘即可抵達。</p>
-                                </div>
-                                <div class="taboo-card">
-                                    <div class="taboo-icon">📅</div>
-                                    <h4>最佳時機</h4>
-                                    <p><strong>驚蟄</strong>（農曆二月初三前後）<br>2026年為西曆3月5日（農曆正月十七）</p>
-                                </div>
-                            </div>
-
-                            <div class="highlight-box">
-                                <div class="box-title">🔥 驚蟄特別安排</div>
-                                <p>驚蟄當天是「打小人」的最高峰期，多數攤檔會延長服務時間，部分拜神婆更會提供 24 小時全天候服務。</p>
-                            </div>
-
-                            <div class="warning-box">
-                                <div class="warning-icon">💡</div>
-                                <h3>溫馨提示</h3>
-                                <p>驚蟄當天人潮極其擁擠，從清晨起便會湧現排隊人龍，現場等候時間可能長達 2 至 3 小時，建議有意前往的市民務必預留充足時間並提早排隊。</p>
-                            </div>
-                        </div>
-
-                        <div class="section-divider">❖</div>
-
-                        <div class="guide-section">
-                            <h2 class="section-heading">服務收費</h2>
-                            <div class="taboo-grid">
-                                <div class="taboo-card">
-                                    <div class="taboo-icon">💰</div>
-                                    <h4>基本服務</h4>
-                                    <p>每次費用劃一約為 <strong>港幣 50 元</strong>。</p>
-                                </div>
-                                <div class="taboo-card">
-                                    <div class="taboo-icon">✨</div>
-                                    <h4>升級加購服務</h4>
-                                    <p>若需針對個人需求進行加強，如祈求事業順利、轉運添貴人或特別開光符紙，部分攤檔提供加購服務。費用約為 <strong>港幣 80 至 150 元</strong>不等，視乎儀式規模及祭品內容而定。</p>
-                                </div>
-                            </div>
-
-                            <div class="note-box" style="margin-top: 24px;">
-                                <span class="note-icon">*</span>
-                                <p>最終費用視乎儀式規模及祭品內容而定，建議開始前先與攤檔確認。</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 推薦地點 -->
-        <section class="page" id="page-locations">
-            <div class="page-header">
-                <div class="container">
-                    <span class="page-tag">Locations</span>
-                    <h1 class="page-title">推薦地點</h1>
-                    <p class="page-desc">親身體驗打小人的最佳去處</p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="location-intro">
-                    <div class="location-intro-icon">📍</div>
-                    <p>根據民間風俗，打小人極為講究「<strong>陰陽氣場</strong>」。儀式通常選在陰氣稍重、煞氣流通的地點，如<strong>陰暗處、三叉路口或橋底</strong>，利用氣流交匯之勢<strong>化解煞氣</strong>。此外，馬路邊緣、山腳或鄰近廟宇的橋邊也是理想之選，象徵將霉運打走並徹底沖散，達到<strong>化煞祈福</strong>的效果。</p>
-                </div>
-
-                <div class="content-nav">
-                    <button class="content-nav-btn active" data-target="loc-causeway">灣仔鵝頸橋</button>
-                    <button class="content-nav-btn" data-target="loc-fuktak">紅磡福德古廟</button>
-                </div>
-
-                <div class="content-panel active" id="loc-causeway">
-                    <div class="location-panel">
-                        <div class="location-hero location-gallery">
-                            <img src="images/推薦地點/鵝頸橋 2.jpg" alt="鵝頸橋打小人攤位" class="content-img location-img">
-                            <img src="images/推薦地點/鵝頸橋 1.jpg" alt="鵝頸橋" class="content-img location-img">
-                        </div>
-                        <div class="location-body">
-                            <div class="location-header">
-                                <h2 class="location-name">灣仔鵝頸橋</h2>
-                                <span class="location-sub">堅拿道天橋底</span>
-                            </div>
-                            <p class="lead-text">
-                                香港最著名的打小人聖地，由於天橋底恰好面對三岔路口，地理上處於極佳的「三煞位」，民間認為此處煞氣重、化煞效果最為靈驗。這裡常年煙火繚繞，多位資深的職業拜神婆在此駐守，為市民及遊客驅除是非。
-                            </p>
-                            <div class="location-details">
-                                <div class="detail-card">
-                                    <div class="detail-icon">🚇</div>
-                                    <div class="detail-content">
-                                        <h4>交通方式</h4>
-                                        <p>港鐵銅鑼灣站A出口，沿羅素街向鵝頸橋方向步行約5分鐘即可抵達。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="https://maps.app.goo.gl/9cBRNxRDiyKB1XuG9" target="_blank" rel="noopener noreferrer" class="btn btn-map">
-                                <span>🗺️</span>
-                                在 Google Maps 查看
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="content-panel" id="loc-fuktak">
-                    <div class="location-panel">
-                        <div class="location-hero location-gallery">
-                            <img src="images/推薦地點/紅磡福德古廟 1.png" alt="紅磡福德古廟" class="content-img location-img">
-                            <img src="images/推薦地點/紅磡福德古廟 2.png" alt="紅磡福德古廟" class="content-img location-img">
-                        </div>
-                        <div class="location-body">
-                            <div class="location-header">
-                                <h2 class="location-name">紅磡福德古廟</h2>
-                                <span class="location-sub">寶來街</span>
-                            </div>
-                            <p class="lead-text">
-                                廟宇位於紅磡<strong>寶來街與船澳街交界</strong>，同樣屬三叉路口，是另一處進行打小人儀式的傳統地點。
-                            </p>
-                            <div class="location-details">
-                                <div class="detail-card">
-                                    <div class="detail-icon">🚇</div>
-                                    <div class="detail-content">
-                                        <h4>交通方式</h4>
-                                        <p>可乘坐港鐵至紅磡站或黃埔站，再步行前往寶來街與船澳街交界。</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <a href="https://maps.app.goo.gl/GVLmne1MttPezJdG8" target="_blank" rel="noopener noreferrer" class="btn btn-map">
-                                <span>🗺️</span>
-                                在 Google Maps 查看
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 體驗線上打小人 -->
-        <section class="page" id="page-experience">
-            <div class="page-header">
-                <div class="container">
-                    <span class="page-tag">Experience</span>
-                    <h1 class="page-title">體驗線上打小人</h1>
-                    <p class="page-desc">選師傅、貼符開打，指尖驅邪轉好運</p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="experience-area" id="experienceArea">
-
-                    <!-- 第一步：選擇師傅 -->
-                    <div class="xp-stage active" id="xp-stage-select">
-                        <div class="xp-step-title">
-                            <span class="xp-step-num">壹</span>
-                            <h2>恭請師傅</h2>
-                            <p>選擇一位師傅為你主持打小人儀式</p>
-                        </div>
-                        <div class="master-cards">
-                            <div class="master-card" data-master="traditional">
-                                <div class="master-photo traditional-photo">
-                                    <div class="master-icon">👵</div>
-                                    <div class="master-badge">傳統正宗</div>
-                                </div>
-                                <div class="master-info">
-                                    <h3>鵝頸橋資深神婆</h3>
-                                    <p>數十年經驗，口訣純正，儀式地道。適合追求傳統氛圍的信眾。</p>
-                                    <ul class="master-tags">
-                                        <li>🔥 正宗口訣</li>
-                                        <li>📿 傳統儀軌</li>
-                                        <li>🧧 開運祈福</li>
-                                    </ul>
-                                    <button class="btn btn-primary master-choose-btn">選擇傳統派</button>
-                                </div>
-                            </div>
-                            <div class="master-card" data-master="cyber">
-                                <div class="master-photo cyber-photo">
-                                    <div class="master-icon">🧙‍♀️</div>
-                                    <div class="master-badge neon">數碼新派</div>
-                                    <div class="neon-ring"></div>
-                                </div>
-                                <div class="master-info">
-                                    <h3>數碼神婆</h3>
-                                    <p>傳承古法再創新，以數碼能量驅邪轉運。儀式型格、節奏感強，深受潮人信眾追捧。</p>
-                                    <ul class="master-tags">
-                                        <li>⚡ 霓虹特效</li>
-                                        <li>💿 數碼口訣</li>
-                                        <li>🌐 全域轉運</li>
-                                    </ul>
-                                    <button class="btn btn-primary master-choose-btn">選擇數碼派</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 第二步：輸入小人信息 -->
-                    <div class="xp-stage" id="xp-stage-info">
-                        <div class="xp-step-title">
-                            <span class="xp-step-num">貳</span>
-                            <h2>標記小人</h2>
-                            <p>輸入你要打的小人，讓師傅為你驅邪</p>
-                        </div>
-                        <div class="villain-form">
-                            <div class="form-group">
-                                <label>小人稱呼</label>
-                                <input type="text" id="villainInput" placeholder="輸入姓名或稱呼（如：某某、老細）" maxlength="12">
-                                <div class="quick-tags">
-                                    <button class="quick-tag" data-val="霉運">霉運</button>
-                                    <button class="quick-tag" data-val="病魔">病魔</button>
-                                    <button class="quick-tag" data-val="是非精">是非精</button>
-                                    <button class="quick-tag" data-val="老細">老細</button>
-                                    <button class="quick-tag" data-val="小三">小三</button>
-                                    <button class="quick-tag" data-val="競爭對手">競爭對手</button>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label>打小人原因</label>
-                                <div class="reason-options">
-                                    <div class="reason-card" data-reason="work">
-                                        <div class="reason-icon">💼</div>
-                                        <span>工作不順</span>
-                                    </div>
-                                    <div class="reason-card" data-reason="love">
-                                        <div class="reason-icon">💔</div>
-                                        <span>感情糾纏</span>
-                                    </div>
-                                    <div class="reason-card" data-reason="health">
-                                        <div class="reason-icon">🤒</div>
-                                        <span>身體欠佳</span>
-                                    </div>
-                                    <div class="reason-card" data-reason="money">
-                                        <div class="reason-icon">💸</div>
-                                        <span>財運不濟</span>
-                                    </div>
-                                    <div class="reason-card" data-reason="gossip">
-                                        <div class="reason-icon">🗣️</div>
-                                        <span>是非纏身</span>
-                                    </div>
-                                    <div class="reason-card" data-reason="general">
-                                        <div class="reason-icon">🌀</div>
-                                        <span>諸事不順</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="btn btn-gold xp-next-btn" id="btnToBattle" disabled>恭請師傅開壇 →</button>
-                        </div>
-                    </div>
-
-                    <!-- 第三步：互動打擊 -->
-                    <div class="xp-stage" id="xp-stage-battle">
-                        <div class="xp-step-title">
-                            <span class="xp-step-num">參</span>
-                            <h2>驅邪打小人</h2>
-                            <p>點擊拖鞋，奮力一擊！打到佢斷氣！</p>
-                        </div>
-                        <div class="battle-arena" id="battleArena">
-                            <div class="arena-bg" id="arenaBg"></div>
-                            <div class="master-avatar" id="battleMaster">
-                                <div class="master-face" id="masterFace">👵</div>
-                                <div class="master-chant" id="masterChant"></div>
-                            </div>
-                            <div class="paper-doll" id="paperDoll">
-                                <div class="talisman">
-                                    <div class="talisman-header">敕令</div>
-                                    <div class="talisman-pattern">☯</div>
-                                    <div class="talisman-name" id="dollNameDisplay">小人</div>
-                                    <div class="talisman-stamp">正</div>
-                                    <div class="talisman-footer">速速退散</div>
-                                </div>
-                            </div>
-                            <div class="slipper" id="gameSlipper" title="點擊打小人">🩴</div>
-                            <div class="hit-particles" id="hitParticles"></div>
-                            <div class="hit-text-effect" id="hitTextEffect">啪！</div>
-                            <div class="battle-hud">
-                                <div class="hud-item">
-                                    <span class="hud-label">擊打次數</span>
-                                    <span class="hud-value" id="battleCount">0</span>
-                                </div>
-                                <div class="hud-item">
-                                    <span class="hud-label">紙人狀態</span>
-                                    <span class="hud-value" id="dollStatus">完好</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="battle-controls">
-                            <button class="btn btn-primary" id="btnHitBig">奮力一擊</button>
-                            <button class="btn btn-outline-dark" id="btnAutoHit">打到佢斷氣（自動）</button>
-                            <button class="btn btn-gold" id="btnFinishBattle">領取平安符 ✨</button>
-                        </div>
-                        <div class="chant-history" id="chantHistory"></div>
-                    </div>
-
-                    <!-- 第四步：轉運祝福 -->
-                    <div class="xp-stage" id="xp-stage-bless">
-                        <div class="bless-scene" id="blessScene">
-                            <div class="gold-particles" id="goldParticles"></div>
-                            <div class="bless-content">
-                                <div class="bless-master" id="blessMaster">👵</div>
-                                <h2 class="bless-title">小人已退散！</h2>
-                                <div class="fortune-card" id="fortuneCard">
-                                    <div class="fortune-sticks">🎋</div>
-                                    <div class="fortune-category" id="fortuneCategory">事業運</div>
-                                    <div class="fortune-text" id="fortuneText">貴人扶持，是非遠離；步步高升，工作順遂。</div>
-                                    <div class="fortune-luck">
-                                        <span>轉運指數</span>
-                                        <div class="stars" id="fortuneStars">⭐⭐⭐⭐⭐</div>
-                                    </div>
-                                </div>
-                                <div class="bless-actions">
-                                    <button class="btn btn-gold" id="btnFortuneAgain">再打一個</button>
-                                    <button class="btn btn-primary" id="btnToShare">領取平安符 →</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- 第五步：分享海報 -->
-                    <div class="xp-stage" id="xp-stage-share">
-                        <div class="xp-step-title">
-                            <span class="xp-step-num">伍</span>
-                            <h2>轉運成功</h2>
-                            <p>生成你的專屬轉運海報，分享給好友</p>
-                        </div>
-                        <div class="share-poster" id="sharePoster">
-                            <div class="poster-header">
-                                <div class="poster-brand">「正」小人</div>
-                                <div class="poster-badge">轉運成功</div>
-                            </div>
-                            <div class="poster-body">
-                                <div class="poster-icon">✨</div>
-                                <h3>我剛剛在線上擊退了小人！<br>你也來試試？</h3>
-                                <div class="poster-target">
-                                    <span>擊退對象</span>
-                                    <strong id="posterTargetName">小人</strong>
-                                </div>
-                                <div class="poster-stats">
-                                    <div class="pstat">
-                                        <div class="pstat-num" id="posterHits">99+</div>
-                                        <div class="pstat-label">擊打次數</div>
-                                    </div>
-                                    <div class="pstat">
-                                        <div class="pstat-num">爆表</div>
-                                        <div class="pstat-label">戰鬥力</div>
-                                    </div>
-                                    <div class="pstat">
-                                        <div class="pstat-num" id="posterLuck">⭐⭐⭐⭐⭐</div>
-                                        <div class="pstat-label">轉運指數</div>
-                                    </div>
-                                </div>
-                                <div class="poster-fortune" id="posterFortune">貴人扶持，是非遠離；步步高升，工作順遂。</div>
-                            </div>
-                            <div class="poster-footer">
-                                <div class="poster-qr" id="posterQr">
-                                    <canvas id="qrCanvas" width="100" height="100"></canvas>
-                                </div>
-                                <div class="poster-qr-text">
-                                    掃碼體驗線上打小人<br>
-                                    <small>香港非物質文化遺產</small>
-                                </div>
-                            </div>
-                            <div class="poster-watermark">「正」小人 · 以正制邪</div>
-                        </div>
-                        <div class="share-actions">
-                            <button class="btn btn-primary" id="btnShareCopy">📋 複製分享文案</button>
-                            <button class="btn btn-gold" id="btnShareDownload">💾 保存海報圖片</button>
-                            <button class="btn btn-outline-dark" id="btnRestart">再來一次</button>
-                        </div>
-                        <div class="share-caption" id="shareCaption"></div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- 打小人迷思 -->
-        <section class="page" id="page-myths">
-            <div class="page-header">
-                <div class="container">
-                    <span class="page-tag">Myths</span>
-                    <h1 class="page-title">打小人迷思</h1>
-                    <p class="page-desc">「專業打手」破解各種打小人迷思</p>
-                </div>
-            </div>
-            <div class="container">
-                <!-- 迷思影片區 -->
-                <div class="myths-section">
-                    <div class="section-header" style="margin-bottom: 48px;">
-                        <span class="section-tag">迷思破解</span>
-                        <h2 class="section-title">三大常見迷思</h2>
-                        <p class="section-subtitle">聽聽專業打手怎麼說</p>
-                    </div>
-                    <div class="video-grid">
-                        <div class="video-card">
-                            <div class="video-thumb">
-                                <iframe src="https://www.youtube.com/embed/KpuyRuqTZAE" title="迷思一：打小人真的會傷害到別人嗎？" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </div>
-                            <div class="video-info">
-                                <h3>迷思一：打小人真的會傷害到別人嗎？</h3>
-                                <div class="myth-answer">
-                                    <p>有的打四方，有的打指定的人，還有的打小三，如果是打指定的人，那也算是吧，其實就是想趕走那些小人，讓自己心裡安心，不想再忍耐了。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="video-card">
-                            <div class="video-thumb">
-                                <iframe src="https://www.youtube.com/embed/WtWUyrOt_Sc" title="迷思二：打小人工作只能女性從事？" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </div>
-                            <div class="video-info">
-                                <h3>迷思二：打小人工作只能女性從事？</h3>
-                                <div class="myth-answer">
-                                    <p>以前是女人一直做這行，幫人消災、打走小人。後來男女都可以做啦，就像廟里有男和尚也有女和尚一樣，我們家族里男女都能從事，沒有男人從事這行是不吉利的說法。</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="video-card">
-                            <div class="video-thumb">
-                                <iframe src="https://www.youtube.com/embed/B4Va_AndwLY" title="迷思三：打小人是折福的行為嗎？" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </div>
-                            <div class="video-info">
-                                <h3>迷思三：打小人是折福的行為嗎？</h3>
-                                <div class="myth-answer">
-                                    <p>不認同哦，這就是幫人趕走身邊的小人而已。</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 採訪影片區 -->
-                <div class="interview-section">
-                    <div class="section-header">
-                        <span class="section-tag">街頭直擊</span>
-                        <h2 class="section-title">真實聲音</h2>
-                        <p class="section-subtitle">來自現場的第一手分享</p>
-                    </div>
-                    <div class="interview-grid">
-                        <div class="interview-card landscape">
-                            <div class="video-thumb">
-                                <iframe src="https://www.youtube.com/embed/4iWx3rF1J20" title="採訪打手婆婆" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </div>
-                            <div class="video-info">
-                                <h3>採訪打手婆婆</h3>
-                                <p class="video-desc">資深神婆分享多年打小人心得與見聞</p>
-                            </div>
-                        </div>
-                        <div class="interview-card portrait">
-                            <div class="video-thumb">
-                                <iframe src="https://www.youtube.com/embed/XE8n0Yj2jq0" title="採訪現場遊客" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                            </div>
-                            <div class="video-info">
-                                <h3>採訪現場遊客</h3>
-                                <p class="video-desc">親身體驗者的真實感受</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- 關於我們 -->
-        <section class="page" id="page-contact">
-            <div class="page-header">
-                <div class="container">
-                    <span class="page-tag">About Us</span>
-                    <h1 class="page-title">關於我們</h1>
-                    <p class="page-desc">「正」小人的成立初衷</p>
-                </div>
-            </div>
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-section">
-                        <h2>成立目的</h2>
-                        <div class="about-purpose">
-                            <p>
-                                「正」小人成立於 2026 年，旨在以創新數碼方式傳承與推廣香港獨特的「打小人」民間文化。我們深信這項被列入<strong>香港非物質文化遺產</strong>的傳統習俗，不僅是庶民的心理療癒機制，更蘊含著深厚的歷史底蘊與民間智慧。
-                            </p>
-                            <p>
-                                透過建立線上體驗平台、整理儀式知識與文化脈絡，我們希望讓更多人——尤其是年輕一代——認識這項地道文化，讓傳統在現代社會中煥發新的生命力，同時為海內外遊客提供一扇了解香港民間信仰的窗口。
-                            </p>
-                        </div>
-                    </div>
-                    <div class="about-section">
-                        <h2>聯絡我們</h2>
-                        <div class="contact-info">
-                            <a class="contact-item" href="mailto:villainhittinghk@gmail.com">
-                                <span class="contact-icon">📧</span>
-                                <div>
-                                    <span class="contact-label">電郵</span>
-                                    <span class="contact-value">villainhittinghk@gmail.com</span>
-                                </div>
-                            </a>
-                            <div class="contact-item">
-                                <span class="contact-icon">📱</span>
-                                <div>
-                                    <span class="contact-label">社交媒體</span>
-                                    <span class="contact-value">@villainhitting_hk（Instagram）／ Villain Hitting HK（Facebook）</span>
-                                </div>
-                            </div>
-                            <div class="contact-item">
-                                <span class="contact-icon">📍</span>
-                                <div>
-                                    <span class="contact-label">地址</span>
-                                    <span class="contact-value">香港北角寶馬山慧翠道 10 號</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- 頁尾 -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <span class="brand-icon">正</span>
-                    <span class="brand-text">小人</span>
-                </div>
-                <p class="footer-desc">傳承香港打小人文化，以正制邪，消災解厄</p>
-                <div class="footer-links">
-                    <a href="#" data-page="about">關於打小人</a>
-                    <a href="#" data-page="guide">打小人指南</a>
-                    <a href="#" data-page="locations">推薦地點</a>
-                    <a href="#" data-page="experience">線上體驗</a>
-                </div>
-                <p class="footer-copy">© 2026 「正」小人. 保留所有權利.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- 回到頂部 -->
-    <button class="back-to-top" id="backToTop" aria-label="回到頂部">↑</button>
-
-    <script src="js/main.js"></script>
-    <script src="js/home.js"></script>
-    <script src="js/about.js"></script>
-    <script src="js/guide.js"></script>
-    <script src="js/locations.js"></script>
-    <script src="js/experience.js"></script>
-    <script src="js/myths.js"></script>
-    <script src="js/contact.js"></script>
-</body>
-</html>
+/* ================================
+   打小人指南 - 頁面專屬樣式
+   ================================ */
+
+/* ---------- 頁面容器 ---------- */
+.guide-panel {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.guide-section {
+    margin-bottom: 72px;
+}
+
+.guide-section:last-child {
+    margin-bottom: 0;
+}
+
+/* ---------- 溫馨提示 ---------- */
+.tip-box {
+    background: linear-gradient(135deg, var(--gold-50) 0%, #fff9f0 100%);
+    border: 1px solid var(--gold-200);
+}
+
+.tip-box .box-title {
+    color: var(--gold-600);
+}
+
+/* ---------- 物品卡片網格 ---------- */
+.item-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+}
+
+.item-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(114, 47, 55, 0.06);
+    box-shadow: 0 4px 20px rgba(114, 47, 55, 0.04);
+    transition: all 0.4s ease;
+}
+
+.item-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 40px rgba(114, 47, 55, 0.1);
+    border-color: rgba(114, 47, 55, 0.12);
+}
+
+.item-img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    background: var(--cream-dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border-bottom: 2px dashed rgba(114, 47, 55, 0.08);
+    position: relative;
+    overflow: hidden;
+}
+
+.item-img::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 12px,
+        rgba(114, 47, 55, 0.02) 12px,
+        rgba(114, 47, 55, 0.02) 24px
+    );
+}
+
+.item-img .ph-icon {
+    font-size: 44px;
+    opacity: 0.45;
+    position: relative;
+}
+
+.item-img .ph-text {
+    font-size: 13px;
+    color: var(--gray-300);
+    letter-spacing: 2px;
+    position: relative;
+}
+
+/* 單張實物照片 */
+.item-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 1;
+}
+
+/* 雙圖並排（小人紙男女） */
+.item-img.dual-img {
+    flex-direction: row;
+    gap: 0;
+    padding: 0;
+    background: #f5f0e8;
+}
+
+.dual-photo {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 12px 8px 8px;
+    gap: 4px;
+}
+
+.dual-photo:first-child {
+    border-right: 1px dashed rgba(114, 47, 55, 0.12);
+}
+
+.dual-photo img {
+    max-width: 100%;
+    max-height: calc(100% - 22px);
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.08));
+}
+
+.dual-label {
+    font-size: 12px;
+    color: var(--burgundy-700);
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: rgba(255,255,255,0.7);
+    padding: 2px 10px;
+    border-radius: 100px;
+}
+
+/* 五寶紙內含物展示 */
+.item-inner-materials {
+    margin-top: 16px;
+    padding-top: 16px;
+    border-top: 1px dashed rgba(114, 47, 55, 0.1);
+}
+
+.inner-photo {
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid rgba(114, 47, 55, 0.06);
+    box-shadow: 0 2px 8px rgba(114, 47, 55, 0.04);
+}
+
+.inner-caption {
+    display: block;
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.7;
+    color: var(--gray-500);
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.item-info {
+    padding: 24px;
+}
+
+.item-info h3 {
+    font-family: var(--font-serif);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--burgundy-900);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.item-info p {
+    font-size: 14px;
+    line-height: 1.75;
+    color: var(--gray-700);
+}
+
+.item-info p strong {
+    color: var(--burgundy-800);
+    font-weight: 600;
+}
+
+/* ---------- 全寬卡片（五寶紙） ---------- */
+.item-card-full {
+    grid-column: 1 / -1;
+}
+
+/* ---------- 五寶紙內含物詳情 ---------- */
+.item-details {
+    margin-top: 24px;
+    padding-top: 24px;
+    border-top: 1px dashed rgba(114, 47, 55, 0.12);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.detail-item {
+    background: linear-gradient(135deg, var(--burgundy-50) 0%, rgba(255,255,255,0.5) 100%);
+    border-radius: 14px;
+    padding: 18px;
+    border: 1px solid rgba(114, 47, 55, 0.06);
+    transition: all 0.3s ease;
+}
+
+.detail-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(114, 47, 55, 0.08);
+    border-color: rgba(212, 175, 55, 0.2);
+}
+
+.detail-item-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.detail-num {
+    width: 26px;
+    height: 26px;
+    background: var(--burgundy-600);
+    color: var(--gold-200);
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.detail-name {
+    font-family: var(--font-serif);
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--burgundy-900);
+    letter-spacing: 1px;
+}
+
+.detail-item > p {
+    font-size: 13px;
+    color: var(--gray-500);
+    line-height: 1.7;
+    padding-left: 36px;
+}
+
+/* ---------- 影片播放器 ---------- */
+.video-wrapper {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background: var(--burgundy-900);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(45, 10, 12, 0.2);
+    position: relative;
+}
+
+.video-wrapper::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 50%, rgba(212, 175, 55, 0.08) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 1;
+}
+
+.video-wrapper video,
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    position: relative;
+    z-index: 2;
+    border: none;
+}
+
+/* ---------- 步驟時間線 ---------- */
+.step-timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    position: relative;
+    margin-top: 32px;
+}
+
+.step-timeline::before {
+    content: '';
+    position: absolute;
+    left: 28px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--gold-300), var(--burgundy-200));
+}
+
+.step-card {
+    display: flex;
+    gap: 24px;
+    padding: 28px 0;
+    position: relative;
+}
+
+.step-card:first-child {
+    padding-top: 0;
+}
+
+.step-card:last-child {
+    padding-bottom: 0;
+}
+
+.step-num {
+    width: 56px;
+    height: 56px;
+    flex-shrink: 0;
+    background: var(--burgundy-600);
+    color: var(--gold-200);
+    font-family: var(--font-serif);
+    font-size: 22px;
+    font-weight: 700;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 16px rgba(114, 47, 55, 0.25);
+    position: relative;
+    z-index: 1;
+}
+
+.step-body {
+    flex: 1;
+    background: var(--white);
+    border-radius: 16px;
+    padding: 28px;
+    border: 1px solid rgba(114, 47, 55, 0.06);
+    box-shadow: 0 2px 12px rgba(114, 47, 55, 0.04);
+    transition: all 0.3s ease;
+}
+
+.step-body:hover {
+    box-shadow: 0 6px 24px rgba(114, 47, 55, 0.08);
+    border-color: rgba(114, 47, 55, 0.1);
+}
+
+.step-body h3 {
+    font-family: var(--font-serif);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--burgundy-900);
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.step-note {
+    display: inline-block;
+    padding: 3px 10px;
+    background: var(--gold-100);
+    color: var(--gold-600);
+    font-family: var(--font-sans);
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 100px;
+    border: 1px solid var(--gold-200);
+}
+
+.step-body p {
+    font-size: 15px;
+    line-height: 1.85;
+    color: var(--gray-700);
+}
+
+.step-body p strong {
+    color: var(--burgundy-800);
+    font-weight: 600;
+}
+
+/* ---------- 報紙版本步驟 ---------- */
+.alt-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+.alt-step-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    background: var(--white);
+    border-radius: 14px;
+    padding: 22px 28px;
+    border: 1px solid rgba(114, 47, 55, 0.06);
+    transition: all 0.3s ease;
+}
+
+.alt-step-item:hover {
+    background: var(--burgundy-50);
+    border-color: rgba(114, 47, 55, 0.1);
+    transform: translateX(4px);
+}
+
+.alt-step-tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 6px 14px;
+    background: var(--burgundy-600);
+    color: var(--white);
+    font-family: var(--font-serif);
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 8px;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.alt-step-item p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--gray-700);
+    padding-top: 4px;
+}
+
+/* ---------- 注意事項框 ---------- */
+.note-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 28px;
+    padding: 18px 24px;
+    background: var(--gold-50);
+    border: 1px solid var(--gold-200);
+    border-radius: 12px;
+}
+
+.note-icon {
+    font-family: var(--font-serif);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--gold-600);
+}
+
+.note-box p {
+    font-size: 14px;
+    color: var(--gray-700);
+    font-weight: 500;
+}
+
+/* ---------- 口訣區塊 ---------- */
+.chant-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.chant-card {
+    background: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgba(114, 47, 55, 0.06);
+    box-shadow: 0 4px 20px rgba(114, 47, 55, 0.04);
+    transition: all 0.4s ease;
+}
+
+.chant-card:hover {
+    box-shadow: 0 8px 32px rgba(114, 47, 55, 0.08);
+    transform: translateY(-3px);
+}
+
+.chant-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 28px;
+    background: linear-gradient(135deg, var(--burgundy-800) 0%, var(--burgundy-700) 100%);
+}
+
+.chant-version {
+    font-family: var(--font-serif);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--gold-300);
+    letter-spacing: 2px;
+}
+
+.chant-badge {
+    padding: 4px 14px;
+    background: rgba(212, 175, 55, 0.15);
+    color: var(--gold-200);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 100px;
+}
+
+.chant-body {
+    padding: 28px;
+}
+
+.chant-body p {
+    font-family: var(--font-serif);
+    font-size: 17px;
+    line-height: 2.2;
+    color: var(--burgundy-900);
+    letter-spacing: 1px;
+}
+
+.chant-rhyme {
+    color: var(--burgundy-600);
+    font-weight: 600;
+}
+
+/* ---------- 禁忌卡片網格（來自儀式禁忌樣式） ---------- */
+.taboo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 32px 0;
+}
+
+.taboo-card {
+    background: var(--white);
+    border: 1px solid rgba(114,47,55,0.08);
+    border-radius: 16px;
+    padding: 28px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.taboo-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--burgundy-300);
+    transition: background 0.3s ease;
+}
+
+.taboo-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 32px rgba(114,47,55,0.1);
+    border-color: var(--burgundy-200);
+}
+
+.taboo-card:hover::before {
+    background: var(--burgundy-600);
+}
+
+.taboo-card .taboo-icon {
+    font-size: 28px;
+    margin-bottom: 14px;
+}
+
+.taboo-card h4 {
+    font-family: var(--font-serif);
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--burgundy-900);
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.taboo-card p {
+    font-size: 14px;
+    line-height: 1.75;
+    color: var(--gray-500);
+}
+
+/* ---------- 警告提示 ---------- */
+.warning-box {
+    background: var(--white);
+    border: 2px solid var(--burgundy-200);
+    border-radius: 16px;
+    padding: 32px;
+    margin: 32px 0;
+    text-align: center;
+}
+
+.warning-box .warning-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.warning-box h3 {
+    font-family: var(--font-serif);
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--burgundy-800);
+    margin-bottom: 12px;
+}
+
+.warning-box p {
+    font-size: 15px;
+    line-height: 1.8;
+    color: var(--gray-700);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ---------- 重點提示盒 ---------- */
+.highlight-box {
+    background: linear-gradient(135deg, var(--gold-50) 0%, var(--cream) 100%);
+    border: 1px solid var(--gold-200);
+    border-radius: 16px;
+    padding: 32px;
+    margin: 32px 0;
+    position: relative;
+}
+
+.highlight-box .box-title {
+    font-family: var(--font-serif);
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--burgundy-800);
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.highlight-box p {
+    font-size: 15px;
+    line-height: 1.85;
+    color: var(--gray-700);
+}
+
+/* ---------- 分隔裝飾 ---------- */
+.section-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin: 56px 0;
+    color: var(--gold-400);
+    font-size: 18px;
+}
+
+.section-divider::before,
+.section-divider::after {
+    content: '';
+    flex: 1;
+    max-width: 120px;
+    height: 1px;
+    background: var(--gold-200);
+}
+
+/* ---------- 回應式 ---------- */
+@media (max-width: 768px) {
+    .item-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .item-details {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .step-timeline::before {
+        left: 22px;
+    }
+
+    .step-card {
+        gap: 16px;
+    }
+
+    .step-num {
+        width: 44px;
+        height: 44px;
+        font-size: 18px;
+    }
+
+    .step-body {
+        padding: 20px;
+    }
+
+    .alt-step-item {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .alt-step-tag {
+        align-self: flex-start;
+    }
+
+    .chant-header {
+        padding: 16px 20px;
+    }
+
+    .chant-body {
+        padding: 20px;
+    }
+
+    .chant-body p {
+        font-size: 15px;
+        line-height: 2;
+    }
+
+    .taboo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .warning-box,
+    .highlight-box {
+        padding: 24px;
+    }
+
+    .video-wrapper {
+        border-radius: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    .item-details {
+        grid-template-columns: 1fr;
+    }
+}
