@@ -51,6 +51,16 @@
     box-shadow: 0 8px 32px rgba(45, 10, 12, 0.1);
 }
 
+.location-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+.location-gallery .location-img {
+    aspect-ratio: 16 / 10;
+}
+
 .location-img .ph-icon {
     font-size: 56px;
     opacity: 0.4;
@@ -187,6 +197,10 @@
 
     .location-intro p {
         font-size: 14px;
+    }
+
+    .location-gallery {
+        grid-template-columns: 1fr;
     }
 
     .location-img {
