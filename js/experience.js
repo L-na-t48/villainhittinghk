@@ -18,6 +18,9 @@
             audioCtx: null
         },
 
+        qrImage: null,
+        qrImageLoaded: false,
+
         // 傳統派咒語庫
         chants: [
             '打你個小人頭，等你好運到盡頭！',
@@ -144,8 +147,22 @@
 
         init() {
             this.initAudio();
+            this.preloadQRImage();
             this.bindEvents();
             this.reset();
+        },
+
+        preloadQRImage() {
+            this.qrImage = new Image();
+            this.qrImage.crossOrigin = 'anonymous';
+            this.qrImage.onload = () => {
+                this.qrImageLoaded = true;
+                this.drawQRCode();
+            };
+            this.qrImage.onerror = () => {
+                console.error('QR Code image failed to load');
+            };
+            this.qrImage.src = 'images/qrcode.png';
         },
 
         reset() {
@@ -620,34 +637,18 @@
             canvas.width = size;
             canvas.height = size;
 
-            // 白底
-            ctx.fillStyle = '#fff';
-            ctx.fillRect(0, 0, size, size);
-
-            // 簡單的模擬 QR 碼圖案
-            ctx.fillStyle = '#2D0A0C';
-            const cell = 5;
-            for (let y = 0; y < size; y += cell) {
-                for (let x = 0; x < size; x += cell) {
-                    if (Math.random() > 0.5) {
-                        ctx.fillRect(x, y, cell, cell);
-                    }
-                }
-            }
-
-            // 三個定位角
-            const corners = [[8, 8], [size - 22, 8], [8, size - 22]];
-            ctx.fillStyle = '#fff';
-            corners.forEach(([cx, cy]) => {
-                ctx.fillRect(cx - 2, cy - 2, 22, 22);
-            });
-            ctx.fillStyle = '#2D0A0C';
-            corners.forEach(([cx, cy]) => {
-                ctx.fillRect(cx, cy, 18, 18);
+            if (this.qrImageLoaded && this.qrImage) {
+                ctx.drawImage(this.qrImage, 0, 0, size, size);
+            } else {
+                // 白底
                 ctx.fillStyle = '#fff';
-                ctx.fillRect(cx + 5, cy + 5, 8, 8);
+                ctx.fillRect(0, 0, size, size);
                 ctx.fillStyle = '#2D0A0C';
-            });
+                ctx.font = '12px sans-serif';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText('載入中...', size / 2, size / 2);
+            }
         },
 
         copyShareText() {
@@ -918,27 +919,18 @@
         },
 
         drawPosterQR(ctx, x, y, size) {
-            const cell = size / 20;
-            ctx.fillStyle = '#2D0A0C';
-            for (let ry = 0; ry < 20; ry++) {
-                for (let cx = 0; cx < 20; cx++) {
-                    if (Math.random() > 0.5) {
-                        ctx.fillRect(x + cx * cell, y + ry * cell, cell + 0.5, cell + 0.5);
-                    }
-                }
-            }
-            // 三個定位角
-            const drawCorner = (cx, cy) => {
-                ctx.fillStyle = '#2D0A0C';
-                ctx.fillRect(cx, cy, cell * 5, cell * 5);
+            if (this.qrImageLoaded && this.qrImage) {
+                ctx.drawImage(this.qrImage, x, y, size, size);
+            } else {
+                // fallback: 畫簡單的方塊表示 QR Code 位置
                 ctx.fillStyle = '#fff';
-                ctx.fillRect(cx + cell, cy + cell, cell * 3, cell * 3);
+                ctx.fillRect(x, y, size, size);
                 ctx.fillStyle = '#2D0A0C';
-                ctx.fillRect(cx + cell * 2, cy + cell * 2, cell, cell);
-            };
-            drawCorner(x, y);
-            drawCorner(x + size - cell * 5, y);
-            drawCorner(x, y + size - cell * 5);
+                ctx.font = '10px sans-serif';
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.fillText('QR', x + size / 2, y + size / 2);
+            }
         }
     };
 
